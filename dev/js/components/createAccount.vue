@@ -23,7 +23,7 @@
         </div>
         <p v-else>
             Vous possédez déjà un compte. <br>
-            Se rendre sur l'<router-link to="/" class="link">accueil</router-link>
+            Se rendre sur l'<router-link to="/" class="link">accueil</router-link>.
         </p>
     </main>
 </template>
