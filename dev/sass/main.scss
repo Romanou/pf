@@ -1,0 +1,47 @@
+@import './vars';
+@import './fonts';
+@import './animations';
+
+* .hidden-message{
+    position: absolute; 
+    height: 1px; width: 1px; 
+    overflow: hidden; 
+    clip: rect(1px 1px 1px 1px);
+}
+
+html{
+    font-family:'roboto_condensedregular';
+    font-size:18px;
+    color:$greyLight;
+}
+
+body{
+    padding:0;
+    margin:0;
+    background:$second;
+}
+
+@import './notification';
+
+#rr-app{
+    padding:$headerHeight 0 0 0;
+    a{
+        font-size:inherit;
+        color:inherit;
+        &:not(.link){
+            text-decoration:none;
+        }
+        &:hover,
+        &:active,
+        &:focus,
+        &.router-link-exact-active{
+            color:inherit;
+            &.link{
+                text-decoration:none;
+            }
+        }
+    }
+    @import './loader';
+    @import './header';
+    @import './mainContainer';
+}

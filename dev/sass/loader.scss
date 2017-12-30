@@ -1,0 +1,39 @@
+div.loader{
+    &:not(.show){
+        display:none;
+    }
+    &.show{
+        cursor:progress;
+        position:fixed;
+        z-index:1000;
+        top:0;
+        left:0;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        width:100vw;
+        height:100vh;
+        font-size:1.2rem;
+        color:$light;
+        background-color:rgba($dark,.5);
+        >img{
+            animation: loading 1s infinite;
+            height:80px;
+            width:80px;
+            border-radius:40px;
+        }
+        >span{
+            position:relative;
+            margin-top:10px;
+            box-sizing:border-box;
+            padding:0 20px;
+            &:after{
+                position:absolute;
+                left:calc(100% - 15px);
+                content:"";
+                animation: loadingPoints 1s linear infinite;
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+@keyframes loading{
+    0%{
+        transform:rotate(0);
+    }
+    25%{
+        transform:rotate(0);
+    }
+    100%{
+        transform:rotate(1turn);
+    }
+}
+
+@keyframes loadingPoints{
+    0%{
+        content:"";
+    }
+    25%{
+        content:".";
+    }
+    50%{
+        content:"..";
+    }
+    75%{
+        content:"...";
+    }
+    100%{
+        content:"";
+    }
+}
+
+@keyframes showHeader {
+    from{
+        transform: translateY(-$headerHeight);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes showNotification {
+    from{
+        transform:scale(0);
+    }
+    to{
+        transform:scale(1);
+    }
+}
+
+@keyframes showText {
+    from{
+        transform:translateY(-10px);
+        opacity:0;
+    }
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+@keyframes showApp{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}

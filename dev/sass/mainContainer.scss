@@ -1,0 +1,10 @@
+main{
+    position: relative;
+    z-index: 0;
+    animation: showApp .5s;
+    width:100%;
+    &:not(.full){
+        box-sizing:border-box;
+        padding:20px;
+    }
+}
