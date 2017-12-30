@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import VueRouter from 'vue-router';
 import IO from 'socket.io-client';
-import config from '../../config';
+import config from '../../pfConfig';
 import VueSocketIO from 'vue-socket.io';
 import front from './front/main';
 

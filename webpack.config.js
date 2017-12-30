@@ -2,7 +2,7 @@ const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const extractSass = new ExtractTextPlugin('../styles/app.css');
 const webpack = require("webpack");
-const config = require('./config');
+const config = require('./pfConfig');
 
 module.exports = {
     entry : ['./dev/js/main.js','./dev/sass/main.scss'],
